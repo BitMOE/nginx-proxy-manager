@@ -22,7 +22,7 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file ./docker/Dockerfile 
     - name: Push 
-      uses: BitMOE/nginx-proxy-mamager@0.1.0
+      uses: BitMOE/nginx-proxy-mamager@master
       with: 
         name: hub.docker.com/zozk/nginx-proxy-mamager # docker image 的名字
         username: ${{ secrets.DOCKER_USERNAME }} # 用户名
